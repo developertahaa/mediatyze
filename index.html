@@ -1,0 +1,1091 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>MediaTyze | Best Marketing Agency</title>
+
+    <style>
+     body {
+    background-color: whitesmoke;
+    font-family: "Nunito Sans", sans-serif !important;
+}
+
+nav {
+    font-family: "Nunito Sans", sans-serif !important;
+    font-style: bold;
+}
+
+.navbar {
+    background-color: #ffffff;
+}
+
+.navbar .nav-link,
+.navbar-brand {
+    color: #000000; /* Black text by default */
+}
+
+.navbar .nav-link:hover,
+.navbar-brand:hover {
+    color: #ff0000; /* Red text on hover */
+}
+
+.nav-item {
+    position: relative;
+    margin-left: 16px;
+}
+
+.nav-item a {
+    font-size: 16px;
+    color: #1a1b1e;
+    font-weight: 700;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 20px; /* Adjust padding to ensure border fits well */
+}
+
+/* Add border-bottom animation on hover */
+.nav-item a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    background-color: #ff0000; /* Red border color */
+    transition: width 0.3s ease-in-out;
+}
+
+.nav-item a:hover::after {
+    width: 100%;
+}
+
+.nav-link:hover {
+    color: #ff0000; /* Red text color on hover */
+}
+
+/* Fix dropdown menu and arrow alignment */
+.dropdown-menu {
+    margin-top: 0; /* Adjust margin to align dropdown items */
+}
+
+.dropdown-toggle::after {
+    display: none; /* Remove the default dropdown arrow */
+}
+
+/* Hamburger icon styles */
+.navbar-toggler {
+    border: none;
+    padding: 8px 10px;
+    color: #000000;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%280, 0, 0, 0.7%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    width: 30px;
+    height: 30px;
+}
+
+/* Custom styles for mobile menu */
+.offcanvas {
+    background-color: #ffffff;
+}
+
+.offcanvas-body .nav-link {
+    color: #000000;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.offcanvas-body .nav-link:hover {
+    color: #ff0000; /* Red text color on hover */
+}
+
+.main-heading{
+    font-family: "Roboto", sans-serif;
+    font-size: 40px;
+    color: #000000;
+    margin-top: 150px;
+    font-weight: 550;
+    line-height: 55px;
+}
+.main-p{
+    font-family: "Nunito Sans", sans-serif !important;
+    font-size: 16px;
+    line-height: 30px;
+    color: #6d6d6d;
+}
+.contact-us-button {
+            position: fixed;
+            top: 50%;
+            right: -35px;
+            transform: translateY(-50%) rotate(90deg);
+            z-index: 1000;
+            background-color: #bb2127;
+            color: #ffffff;
+            padding: 10px 24px;
+            font-size: 14px;
+            font-weight: bold;
+            border-radius: 0;
+            text-align: center;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+        }
+        .contact-us-button:hover {
+            color: white;
+            background-color: #96181e;
+        }
+        .modal-content {
+    border-radius: 20px;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.modal-header {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.modal-title {
+    font-size: 1.5rem;
+    color: #333;
+    letter-spacing: 0.5px;
+}
+
+.modal-body {
+    padding-top: 0;
+}
+
+.form-control-lg {
+    height: calc(1.5em + 1.25rem + 2px);
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    box-shadow: none;
+    transition: border-color 0.3s ease;
+}
+
+.form-control-lg:focus {
+    border-color: #bb2127;
+    box-shadow: 0 0 0 0.2rem rgba(187, 33, 39, 0.25);
+}
+
+.btn-lg {
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.btn-light {
+    background-color: #f5f5f5;
+    color: #666;
+    border: 1px solid #ddd;
+    transition: background-color 0.3s ease;
+}
+
+.btn-light:hover {
+    background-color: #ebebeb;
+}
+
+.btn-danger {
+    background-color: #bb2127;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-danger:hover {
+    background-color: #a11b22;
+}
+
+.btn-close {
+    background-color: #f5f5f5;
+    border-radius: 50%;
+    padding: 5px;
+    line-height: 1;
+}
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: #25D366;
+    color: #ffffff;
+    font-size: 40px;
+    padding: 2px 14px;
+    border-radius: 50px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.whatsapp-button:hover {
+    background-color: #1EBE5D;
+    color: #ffffff;
+}
+
+.whatsapp-button i {
+    margin: 0;
+    padding: 0;
+}
+.main-wrapper {
+    background-image: url('images/back.png'); /* Replace with your image path */
+    background-size: cover; /* Cover the entire area */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    width: 100%; /* Ensure the wrapper takes up full width */
+    position: relative; /* Position relative to the document */
+}
+
+.main {
+    padding: 50px 0; /* Padding for the content */
+    max-width: 1140px; /* Maintain the max-width for the content inside */
+    margin: 0 auto; /* Center the content container */
+    color: white; /* Example: Text color for better visibility */
+    height: 100vh;
+}
+
+
+.bg-image {
+    background-size: cover;
+    background-position: center;
+    height: 280px; /* Adjust the height as needed */
+    display: flex;
+    width: 352px;
+    align-items: center;
+    justify-content: center;
+    color: white; /* Adjust text color if needed */
+    margin-right: 20px;
+}
+
+.text-overlay h3{
+    text-align: center;
+    padding: 50px 10px !important;
+    border-radius: 8px; /* Optional: rounded corners for the text box */
+    font-size: 40px;
+    font-weight: 800 !important;
+}
+.numbers{
+    font-weight: 900;
+    font-size: 45px;
+    color: #1b1d21;
+}
+.num{
+    padding: 20px 70px;
+}
+.image-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.image-container img {
+    width: 120%; /* Increase this value to zoom in more */
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
+.t-main{
+    font-family: "Montserrat", sans-serif;
+
+}
+ul.check {
+    list-style:  none;
+    color: white;
+}
+
+ul.check li {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+ul.check li:before {
+    content: '\f00c';
+    font-family: FontAwesome;
+    position: absolute;
+    top: 2px;
+    left: -20px;
+}
+.service-text{
+    font-size: 15px;
+    line-height: 24px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+    padding-top: 15px;
+}
+.services{
+    margin-right: 10px;
+    width: 165px;
+    margin-left: 10px;
+    padding: 20px 0;
+    cursor: pointer;
+}
+.services:hover{
+    background-color: #bb2127;
+    transition: 0.3s ease-in;
+}
+/* General padding for mobile */
+@media (max-width: 767px) {
+    .container-fluid {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    /* Adjusting the numbers section to show 2 in one row */
+    .num {
+        width: 50%; /* 50% width for two per row */
+        margin-bottom: 20px; /* Spacing between rows */
+        text-align: center;
+        margin-left: -18px;
+    }
+
+    /* Ensure the cards are centered and display one by one */
+    .bg-image {
+        margin-left: 0 !important;
+        margin-bottom: 20px;
+        background-size: cover;
+        height: 200px; /* Adjust the height as needed */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .row .col-lg-4 {
+        flex: 0 0 100%; /* Full width for each card */
+        max-width: 100%;
+    }
+
+    /* Adjust the text overlay for the cards */
+    .text-overlay {
+        color: white;
+        font-weight: bold;
+        font-size: 1.5rem;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+}
+
+.contact{
+    background-color: #0a274d; color: white; font-size: 16px; border: none; padding: 15px 35px; cursor: pointer; font-weight: 600; margin-top: 90px;
+}
+.contact:hover{
+    background-color: white;
+    color: #43baff;
+    transition: 0.4s ease-in;
+}
+
+.container {
+    padding: 0;
+}
+
+.case-study-row {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.case-study-card {
+    position: relative;
+    border: none;
+    border-radius: 0;
+    overflow: hidden;
+    height: 300px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.case-study-card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.case-study-card-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.case-study-card-title {
+    font-size: 1.25rem;
+    font-weight: 800;
+    margin-bottom: 5px;
+}
+
+.case-study-card-text {
+    font-size: 0.9rem;
+    font-weight: 300;
+    margin-bottom: 0;
+}
+
+.case-study-card-link {
+    display: block;
+    margin: 0;
+}
+
+.case-study-card:hover .case-study-card-img {
+    transform: scale(1.05);
+    filter: grayscale(100%);
+}
+
+.case-study-card:hover {
+    transform: scale(1.02);
+}
+
+/* Optimize performance by reducing unnecessary margin adjustments */
+.case-study-card-img, .case-study-card-overlay, .case-study-card-title, .case-study-card-text {
+    will-change: transform, filter; /* Hint to the browser to optimize for these properties */
+}
+
+
+.row .col-lg-3 {
+    padding: 10px; /* Add some spacing between logos */
+}
+b body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        .footer {
+            background-color: #96181e; /* Replace with your background color */
+            padding: 20px 0;
+            margin: 0;
+            min-height: 60vh; /* Optional: Ensures footer covers the entire viewport if content is short */
+        }
+
+        .footer .container {
+            margin-bottom: 0;
+        }
+
+
+        .text-bold {
+            font-weight: bold;
+        }
+.footer_opt{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+.footer_opt li{
+    margin-left: -45px;
+}
+.footer_opt li a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+.footer_opt li a:hover{
+    color: #000000 ;
+    transition: 0.4s ease-in;
+}
+@media(max-width: 440px){
+    body{
+        overflow-x: hidden;
+        padding: 0 -10px;
+    }
+    .cons{
+        font-size: 30px !important;
+    }
+}
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
+.nav-item.dropdown .dropdown-menu {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.nav-item.dropdown:hover .nav-link {
+    color: #000; /* Optional: Change link color on hover */
+}
+.logo-container img {
+    width: 100%;
+    height: 50px; /* Set a fixed height */
+    object-fit: contain; /* Keep aspect ratio while fitting within the container */
+    filter: grayscale(100%); /* Initially greyscale */
+    transition: filter 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+.logo-container img:hover {
+    filter: grayscale(0%); /* On hover, remove greyscale */
+    transform: scale(1.1); /* Slight zoom effect */
+}
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container" style="padding: 0 25px; padding-top: 10px;" >
+            <!-- Logo -->
+            <a class="navbar-brand pb-2" href="#">
+                <img src="images/logo.png" alt="Logo" height="40" class="d-inline-block align-text-top">
+            </a>
+
+            <!-- Hamburger icon -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-controls="mobileMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Centered nav items -->
+            <div class="mx-auto d-none d-lg-block" style="margin-left: 150px !important;">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu    " aria-labelledby="servicesDropdown">
+                            <li><a class="dropdown-item" href="#">Digital Marketing Solutions</a></li>
+                            <li><a class="dropdown-item" href="#">Content Writting</a></li>
+                            <li><a class="dropdown-item" href="#">Website Development</a></li>
+                            <li><a class="dropdown-item" href="#">SEO</a></li>
+                            <li><a class="dropdown-item" href="#">Ecommerce Solutions</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Our Clients</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blogs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="margin-left: 80px; color: #6d6d6d; font-weight: 50;" href="#">|</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Contact Us button on the right -->
+            <div class="d-none d-lg-block">
+                <a href="">
+                    <i class="fa-solid fa-paper-plane text-danger" style="font-size: 20px;"><span style="color: #6d6d6d; margin-left: 10px; font-size: 14px; line-height: 22.4px; font-weight: 0; letter-spacing: 2px;">Contact Us</span></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Offcanvas menu for mobile -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="mobileMenuLabel">Menu</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="servicesDropdownMobile" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Services
+                    </a>
+                    <ul class="dropdown-menu mt-4" aria-labelledby="servicesDropdownMobile">
+                        <li><a class="dropdown-item" href="#">Digital Marketing Solutions</a></li>
+                        <li><a class="dropdown-item" href="#">Content Writting</a></li>
+                        <li><a class="dropdown-item" href="#">Website Development</a></li>
+                        <li><a class="dropdown-item" href="#">SEO</a></li>
+                        <li><a class="dropdown-item" href="#">Ecommerce Solutions</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Our Clients</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Blogs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="main-wrapper">
+        <div class="container main">
+            <div class="row">
+                <div class="col-lg-6 col-md-8 col-sm-12">
+                    <h2 class="main-heading">Get expert <br>
+                        Digital Transformation
+                        consulting & services <br>
+                        to elevate your Business.</h2>
+                    <p class="main-p">Wanna get in touch? Let’s talk <span><a href="" class="text-danger"><i class="fa-sharp fa-solid fa-paper-plane"></i></a></span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+<a href="#" class="contact-us-button" data-bs-toggle="modal" data-bs-target="#contactUsModal">Contact Us</a>
+
+<!-- WhatsApp Button -->
+<a href="https://wa.me/yourphonenumber" target="_blank" class="whatsapp-button">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+
+<div class="container-fluid" style="background-color: #f2f2f2;">
+    <div class="container mt-4" style="padding: 40px 10px;">
+        <div class="row">
+            <div class="col-lg-4 mt-4">
+                <p class="text-danger" style="text-transform: uppercase; font-size: 14px; font-style: bold !important;"><b>// We transform businesses</b></p>
+                <h2 style="font-weight: 800;">For Over 10 Years. <br>For Thousands of Customers.</h2>
+            </div>
+            <div class="col-lg-8 mt-4 pt-4">
+                <p style="padding-top: 1rem; color: #383737;">We’ve been helping businesses build their brand presence and achieve their goals for the past over 9 years. Your brand will be empowered by our process. Come and see how we can help you expand, keep your expenses low, and put you on the path to success and profitability. Let`s work together to build the digital future of your business.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-lg-4 bg-image" style="background-image: url('images/01.png'); margin-left: 20px;">
+                <div class="text-overlay">
+                    <h3>Marketing & <br>Strategy</h3>
+                </div>
+            </div>
+            <div class="col-lg-4 bg-image" style="background-image: url('images/02.png');">
+                <div class="text-overlay">
+                    <h3>Interactive Web Solutions</h3>
+                </div>
+            </div>
+            <div class="col-lg-4 bg-image" style="background-image: url('images/03.png');">
+                <div class="text-overlay">
+                    <h3>Ecommerce <br>Solutions</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-4 pt-4 mb-4">
+    <div class="row" style="padding-left: 100px;">
+        <div class="col-lg-3 num">
+            <h1 class="numbers">971+</h1>
+            <p style="color: #e21e2c; font-weight: 700; text-transform: uppercase; font-size: 14px;">Projects Done</p>
+        </div>
+        <div class="col-lg-3 num">
+            <h1 class="numbers">67+</h1>
+            <p style="color: #e21e2c; font-weight: 700; text-transform: uppercase; font-size: 14px;">Startup Enabled</p>
+        </div>
+        <div class="col-lg-3 num">
+            <h1 class="numbers">23+</h1>
+            <p style="color: #e21e2c; font-weight: 700; text-transform: uppercase; font-size: 14px;">Countries</p>
+        </div>
+        <div class="col-lg-3 num">
+            <h1 class="numbers">9+</h1>
+            <p style="color: #e21e2c; font-weight: 700; text-transform: uppercase; font-size: 14px;">Glorious Years</p>
+        </div>
+    </div>
+</div>
+
+
+<div class="container-fluid mt-2 mb-4" style="background-color: #fafafa;">
+    <div class="row">
+        <div class="col-lg-6 d-flex align-items-center justify-content-center">
+            <img src="images/branding.png" alt="Branding Image" class="img-fluid" height="400px">
+        </div>
+        <div class="col-lg-6">
+            <p class="text-danger" style="text-transform: uppercase; font-size: 14px; font-weight: 600; padding-top: 20px;"><b>// About Company</b></p>
+            <h2 style="font-weight: 900; font-size: 30px; color: #1b1d21; letter-spacing: 1px;">Your Partner for <br>
+                Your Sustainable Growth</h2>
+                <p class="mt-4" style="letter-spacing: 1px;">For more than a decade now, 1st Digit has been offering exceptional Digital Marketing & Web Development services to clients of different industry. Exceptional services are provided by an experienced team of specialists that have accumulated vast knowledge in their respective industries. </p>
+                <p class="mt-2" style="letter-spacing: 1px;">We are proud of our reputation for client satisfaction, as well as for our core values of integrity, devotion and ethical business methods.</p>
+                <p class="mt-4"><b><i>Established global brands trust us with their business so can you. We’re ecstatic to be working for you.</i></b></p>
+            </div>
+    </div>
+</div>
+
+
+<div class="container-fluid mt-4 mb-4" style="background-color: #211e3b; padding: 40px 80px; padding-bottom: 100px;">
+    <div class="row">
+        <div class="col-lg-6">
+            <p style="text-transform: uppercase; color: #8e88b8; font-size: 14px; font-weight: 600; padding-top: 20px;"><b>// SERVICE INDEX</b></p>
+            <h1 class="text-white t-main mb-4" style="font-weight: 800; font-size: 36px; line-height: 48px;">WHAT DO WE HAVE IN <br> THE BOX?</h1>
+            <p style="color: #8e88b8; font-size: 16px; font-weight: 200;"><b>There are no shortcuts to success; it all comes down to the process</b></p>
+            <ul class="check mt-4">
+                <li>Research & Analysis</li>
+                <li>Strategy into Action</li>
+                <li>Gain Brand Credibility</li>
+                <li>Higher Conversion</li>
+                <li>Transparent Reporting</li>
+            </ul>
+        </div>
+        <div class="col-lg-6">
+            <div class="row">
+                <div class="col-lg-4 text-white services mb-2" style="border: 1px solid grey;">
+                    <div class="container text-center pt-4">
+                        <i class="fa-solid fa-laptop" style="font-size: 30px;"></i>
+                        <br>
+                        <p class="service-text">Digital Marketing</p>
+                    </div>
+                    
+                </div>
+                <div class="col-lg-4 text-white services mb-2" style="border: 1px solid grey;">
+                    <div class="container text-center pt-4">
+                        <i class="fa-solid fa-check-to-slot" style="font-size: 30px;"></i>
+                        <br>
+                        <p class="service-text">SEM & Lead Generation</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-white services mb-2"  style="border: 1px solid grey;">
+                    <div class="container text-center pt-4">
+                        <i class="fa-brands fa-google" style="font-size: 30px;"></i>
+                        <br>
+                        <p class="service-text">Google SEO</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 text-white services mt-2" style="border: 1px solid grey;">
+                    <div class="container text-center pt-4">
+                        <i class="fa-solid fa-hashtag" style="font-size: 30px;"></i>
+                        <br>
+                        <p class="service-text">Social MEdia MArketing</p>
+                    </div>
+                    
+                </div>
+                <div class="col-lg-4 text-white services mt-2" style="border: 1px solid grey;">
+                    <div class="container text-center pt-4">
+                        <i class="fa-solid fa-bag-shopping" style="font-size: 30px;"></i>
+                        <br>
+                        <p class="service-text">Ecommerce Solutions</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-white services mt-2"  style="border: 1px solid grey;">
+                    <div class="container text-center pt-4">
+                        <i class="fa-solid fa-laptop-code" style="font-size: 30px;"></i>
+                        <br>
+                        <p class="service-text">web Development</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container" style="position: relative; max-width: calc(100% - 100px); margin: -100px auto; overflow: hidden; background-image: url('images/data.jpg'); background-size: cover; background-position: center; padding: 0 50px; height: 40vh; border-bottom-left-radius: 30px;">
+    <!-- Overlay -->
+    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5);"></div>
+
+    <div class="row" style="position: relative; padding: 30px 0;">
+        <div class="col-md-10 col-lg-10">
+            <p style="text-transform: uppercase; color: #8e88b8; font-size: 14px; font-weight: 600; padding-top: 20px;"><b>// Be like the future, go digital.</b></p>
+
+            <h1 class="text-white t-main mb-4" style="font-weight: 800; font-size: 50px; line-height: 48px;">Let’s Build Your Brand For <br> The Future!</h1>
+        </div>
+        <div class="col-md-2 col-lg-2">
+            <button class="contact">Contact Us</button>
+        </div>
+    </div>
+</div>
+
+<div class="case-study-container mt-4" style="margin-top: 150px !important;">
+    <div class="row case-study-row">
+        <div class="col-lg-5">
+            <p class="text-danger case-study-header" style="text-transform: uppercase; font-size: 14px; font-weight: 600; padding-top: 20px;">
+                <b>// latest case studies</b>
+            </p>
+            <h2 class="case-study-title" style="font-weight: 900; font-size: 30px; color: #1b1d21; letter-spacing: 1px;">
+                Introduce Our Projects
+            </h2>
+        </div>
+        <div class="col-lg-5">
+            <p class="case-study-description" style="margin-top: 50px; letter-spacing: 1px;">
+                Discover how we’ve assisted prominent brands in realizing their full potential in the digital era.
+            </p>
+        </div>
+        <div class="col-lg-2" style="margin-top: 70px;">
+            <a href="#" class="text-danger case-study-link" style="text-decoration: none; font-weight: 800; font-size: 14px;">
+                <i class="fa-solid fa-arrow-right"></i> <span>VIEW ALL PROJECTS</span>
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="case-study-container mt-4">
+    <div class="row case-study-row">
+        <!-- Card 1 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+            <a href="link-to-your-page-1" class="case-study-card-link">
+                <div class="case-study-card">
+                    <img src="images/model.jpg" alt="Pernia’s Pop-Up Shop" class="case-study-card-img" loading="lazy">
+                    <div class="case-study-card-overlay">
+                        <h5 class="case-study-card-title">Pernia’s Pop-Up Shop</h5>
+                        <p class="case-study-card-text">DIGITAL MARKETING / E-COMMERCE</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <!-- Card 2 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+            <a href="link-to-your-page-2" class="case-study-card-link">
+                <div class="case-study-card">
+                    <img src="images/hotel.jpg" alt="Radisson Blu Hotels & Resorts" loading="lazy" class="case-study-card-img">
+                    <div class="case-study-card-overlay">
+                        <h5 class="case-study-card-title">Radisson Blu Hotels & Resorts</h5>
+                        <p class="case-study-card-text">DIGITAL MARKETING / HOTELS</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <!-- Card 3 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+            <a href="link-to-your-page-3" class="case-study-card-link">
+                <div class="case-study-card">
+                    <img src="images/gaming.jpg" alt="ROG – Republic of Gamers (ASUS)" loading="lazy" class="case-study-card-img">
+                    <div class="case-study-card-overlay">
+                        <h5 class="case-study-card-title">ROG – Republic of Gamers (ASUS)</h5>
+                        <p class="case-study-card-text">DIGITAL MARKETING / GAMING / TECHNOLOGY</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <!-- Card 4 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+            <a href="link-to-your-page-4" class="case-study-card-link">
+                <div class="case-study-card">
+                    <img src="images/aircraft.jpg" alt="CAE Simulation Training Pvt. Ltd." loading="lazy" class="case-study-card-img">
+                    <div class="case-study-card-overlay">
+                        <h5 class="case-study-card-title">CAE Simulation Training Pvt. Ltd.</h5>
+                        <p class="case-study-card-text">Aviation/Development/Digital Marketing</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <!-- Card 5 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+            <a href="link-to-your-page-5" class="case-study-card-link">
+                <div class="case-study-card">
+                    <img src="images/parking.jpg" alt="SAME – School for Aircraft Maintenance Engineering"  loading="lazy"class="case-study-card-img">
+                    <div class="case-study-card-overlay">
+                        <h5 class="case-study-card-title">SAME – School for Aircraft Maintenance Engineering</h5>
+                        <p class="case-study-card-text">Aviation/Design/Development/Digital Marketing</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <!-- Card 6 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+            <a href="link-to-your-page-6" class="case-study-card-link">
+                <div class="case-study-card">
+                    <img src="images/gift.jpg" alt="Casa Decor" loading="lazy" class="case-study-card-img">
+                    <div class="case-study-card-overlay">
+                        <h5 class="case-study-card-title">Casa Decor</h5>
+                        <p class="case-study-card-text">Development/Digital Marketing/E-commerce/Home Décor</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+<div class="container">
+    <div class="container mt-4 text-center">
+        <p class="text-danger" style="text-transform: uppercase; font-size: 14px; font-weight: 600; padding-top: 20px;"><b>// OUR CLIENTS</b></p>
+        <h2 style="font-weight: 1000; font-size: 36px; color: #1b1d21; letter-spacing: 1px;">OUR BUSINESS IS TO GROW YOURS</h2>
+        <div class="container mt-4">
+            <div class="row mb-4 mt-4">
+                <div class="col-lg-3 col-md-6 logo-container">
+                    <img src="images/c1.png" alt="Client 1 Logo">
+                </div>
+                <div class="col-lg-3 col-md-6 logo-container">
+                    <img src="images/c2.png" alt="Client 2 Logo">
+                </div>
+                <div class="col-lg-3 col-md-6 logo-container">
+                    <img src="images/c3.png" alt="Client 3 Logo">
+                </div>
+                <div class="col-lg-3 col-md-6 logo-container">
+                    <img src="images/c4.png" alt="Client 4 Logo">
+                </div>
+                <div class="row mt-4">
+                    <div class="col-lg-3 col-md-6 logo-container">
+                        <img src="images/s1.png" alt="Client 1 Logo">
+                    </div>
+                    <div class="col-lg-3 col-md-6 logo-container">
+                        <img src="images/i2.png" alt="Client 2 Logo">
+                    </div>
+                    <div class="col-lg-3 col-md-6 logo-container">
+                        <img src="images/h2.png" alt="Client 3 Logo">
+                    </div>
+                    <div class="col-lg-3 col-md-6 logo-container">
+                        <img src="images/errr.png" alt="Client 4 Logo">
+                    </div>
+
+                    <div class="row mt-4" style="padding-left: 60px;">
+                        <div class="col-lg-3 col-md-6 logo-container">
+                            <img src="images/h4.png" alt="Client 1 Logo">
+
+                        </div>
+                        <div class="col-lg-3 col-md-6 logo-container">
+                            <img src="images/17_prev_ui.png" alt="Client 2 Logo">
+                        </div>
+                        <div class="col-lg-3 col-md-6 logo-container">
+                            <img src="images/ana.png" alt="Client 3 Logo">
+                        </div>
+                        <div class="col-lg-3 col-md-6 logo-container">
+                            <img src="images/i4.png" alt="Client 4 Logo">
+                        </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="container-fluid contact-last" style="position: relative; width: 100%; overflow: hidden; background-image: url('images/contact.jpg'); background-size: cover; background-position: center; height: 70vh;">
+    <!-- Overlay -->
+    <div style="position: absolute; z-index: 1; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5);"></div>
+   
+    <div class="text-center" style="position: relative; z-index: 2; color: white; padding: 120px 20px;">
+        <p class="text-danger" style="text-transform: uppercase; font-size: 16px; font-weight: 600;"><b>// Drop us a line! We are here to answer your questions 24/7</b></p>
+        <h2 style="font-weight: 1000; font-size: 60px; letter-spacing: 1px;" class="cons">NEED A CONSULTATION?</h2>
+        <button class="btn btn-danger px-4 py-2" style="font-size: 18px; font-weight: bold;">Contact Us</button>
+    </div>
+</div>
+
+
+
+<div class="container-fluid footer" style="padding: 20px 10px;">
+    <div class="text-center">
+        <img src="images/mediatyze_neutral.png" alt="" width="120px">
+    </div>
+    <div class="container mt-4">
+        <div class="row text-center text-white text-bold px-2">
+            <div class="col-lg-4 col-md-6 mb-3">
+                <p style="margin-bottom: 5px;"><i class="fas fa-map-marker-alt"></i> B - 127, Sector - 02, Noida, U.P, India</p>
+                <p style="font-weight: 800; color: rgb(221, 216, 216); margin-bottom: 0;"><i class="fas fa-location-arrow"></i> Our Address</p>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-3">
+                <p style="margin-bottom: 5px;"><i class="fas fa-envelope"></i> info@1stdigit.com</p>
+                <p style="font-weight: 800; color: rgb(221, 216, 216); margin-bottom: 0;"><i class="fas fa-mail-bulk"></i> Our Mailbox</p>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-3">
+                <p style="margin-bottom: 5px;"><i class="fas fa-phone"></i> +91 70425 35704</p>
+                <p style="font-weight: 800; color: rgb(221, 216, 216); margin-bottom: 0;"><i class="fas fa-phone-alt"></i> Our Phone</p>
+            </div>
+        </div>
+        <div class="container py-4" style="padding: 0 20px; margin-top: 30px;">
+            <ul class="footer_opt" style="padding: 0; list-style: none; display: flex; flex-wrap: wrap; justify-content: center;">
+                <li style="margin: 10px;"><a href="#">Home</a></li>
+                <li style="margin: 10px;"><a href="#">Services</a></li>
+                <li style="margin: 10px;"><a href="#">Marketing</a></li>
+                <li style="margin: 10px;"><a href="#">SEM</a></li>
+                <li style="margin: 10px;"><a href="#">SMM</a></li>
+                <li style="margin: 10px;"><a href="#">Development</a></li>
+                <li style="margin: 10px;"><a href="#">Contacts</a></li>
+            </ul>
+        </div>
+        <div class="text-center">
+            <p class="text-white" style="font-size: 14px;"><b>Copyright © 2024 Mediatyze inc.</b></p>
+        </div>
+    </div>
+</div>
+
+<!-- Contact Us Modal -->
+<div class="modal fade" id="contactUsModal" tabindex="-1" aria-labelledby="contactUsModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content rounded-3 shadow-lg">
+            <div class="modal-header border-0">
+                <h5 class="modal-title fw-bold" id="contactUsModalLabel">Get in Touch</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-4">
+                <form>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control form-control-lg rounded-2" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control form-control-lg rounded-2" id="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="mobile" class="form-label">Mobile Number</label>
+                        <input type="text" class="form-control form-control-lg rounded-2" id="mobile" placeholder="Your Mobile Number" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="company" class="form-label">Company</label>
+                        <input type="text" class="form-control form-control-lg rounded-2" id="company" placeholder="Your Company" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control form-control-lg rounded-2" id="message" rows="4" placeholder="Your Message" required></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer border-0">
+                <button type="button" class="btn btn-light btn-lg" data-bs-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-danger btn-lg">Send Message</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script>
+        // Initialize dropdowns on hover for large screens
+        const dropdownElements = document.querySelectorAll('.dropdown-toggle');
+        dropdownElements.forEach(function(dropdownToggleEl) {
+            if (window.innerWidth >= 992) { // lg breakpoint
+                dropdownToggleEl.addEventListener('mouseenter', function() {
+                    const dropdownMenu = this.nextElementSibling;
+                    dropdownMenu.classList.add('show');
+                });
+
+                dropdownToggleEl.addEventListener('mouseleave', function() {
+                    const dropdownMenu = this.nextElementSibling;
+                    dropdownMenu.classList.remove('show');
+                });
+            }
+        });
+
+    </script>
+
+</body>
+
+</html>
