@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Contact Us | Best Marketing Agency</title>
+    <style>
+        .main {
+    padding: 40px 10px;
+    max-width: 1140px; /* Maintain the max-width for the content inside */
+    margin: 0 auto; /* Center the content container */
+    color: white; /* Example: Text color for better visibility */
+    height: 70vh;
+}
+.service-card{
+    margin: 20px 0;
+    padding: 40px 20px;
+}
+.icon{
+    font-size: 50px !important;
+    color: #bb2127;
+}
+.service-text{
+    font-size: 18px;
+    font-weight: bold;
+}
+.service-para{
+    text-wrap: pretty;
+}
+.service-card:hover {
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover .icon {
+    color: #43baff; /* Change icon color on hover */
+    transition: color 0.3s ease;
+}
+
+.service-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    background-color: #e63946; /* Red color */
+    transition: width 0.4s ease, height 0.4s ease;
+    z-index: 1;
+}
+
+.service-card:hover::before {
+    width: 30px; /* Size of the filled corner */
+    height: 30px;
+}
+
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container" style="padding: 0 25px; padding-top: 10px;" >
+            <!-- Logo -->
+            <a class="navbar-brand pb-2" href="../index.html">
+                <img src="../images/logo.png" alt="Logo" height="40" class="d-inline-block align-text-top">
+            </a>
+
+            <!-- Hamburger icon -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-controls="mobileMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Centered nav items -->
+            <div class="mx-auto d-none d-lg-block" style="margin-left: 150px !important;">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                            <li><a class="dropdown-item" href="#">Digital Marketing Solutions</a></li>
+                            <li><a class="dropdown-item" href="#">Content Writting</a></li>
+                            <li><a class="dropdown-item" href="#">Website Development</a></li>
+                            <li><a class="dropdown-item" href="#">SEO</a></li>
+                            <li><a class="dropdown-item" href="#">Ecommerce Solutions</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Our Clients</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blogs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="margin-left: 80px; color: #6d6d6d; font-weight: 50;" href="#">|</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Contact Us button on the right -->
+            <div class="d-none d-lg-block">
+                <a href="">
+                    <i class="fa-solid fa-paper-plane text-danger" style="font-size: 20px;"><span style="color: #6d6d6d; margin-left: 10px; font-size: 14px; line-height: 22.4px; font-weight: 0; letter-spacing: 2px;">Contact Us</span></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+<!-- Offcanvas menu for mobile -->
+<div class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="mobileMenuLabel">Menu</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="services.html" id="servicesDropdownMobile" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Services
+                </a>
+                <ul class="dropdown-menu mt-4" aria-labelledby="servicesDropdownMobile">
+                    <li><a class="dropdown-item" href="#">Digital Marketing Solutions</a></li>
+                    <li><a class="dropdown-item" href="#">Content Writting</a></li>
+                    <li><a class="dropdown-item" href="#">Website Development</a></li>
+                    <li><a class="dropdown-item" href="#">SEO</a></li>
+                    <li><a class="dropdown-item" href="#">Ecommerce Solutions</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Portfolio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Our Clients</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Blogs</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+<div class="m-wrapper">
+    <div class="container main">
+        <div class="row">
+            <div class="col-lg-6 col-md-8 col-sm-12">
+                <h2 class="main-heading top-heading">Services</h2>
+                <p class="main-p top-p">At Mediatyzed, we specialize in guiding businesses through the complexities of the digital landscape to achieve their goals and drive success.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container my-4">
+    <p class="text-danger secondary text-center" style="margin: 40px 0;">// our services</p>
+    <h2 class="text-center primary">We Offer a Wide Variety of Digital Marketing & IT Services</h2>
+
+    <div class="container my-4">
+        <div class="row">
+            <div class="col-lg-4 service-card">
+                <div class="container text-center pt-4">
+                    <i class="fa-solid fa-laptop icon" style="font-size: 30px;"></i>
+                    <br>
+                    <p class="service-text">Digital Marketing</p>
+                    <p class="service-para">Digital marketing is the promotion of brands to engage with potential customers through the internet and other types of digital communication.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 service-card">
+                <div class="container text-center pt-4">
+                    <i class="fa-solid fa-check-to-slot icon" style="font-size: 30px;"></i>
+                    <br>
+                    <p class="service-text">SEM & Lead Generation</p>
+                    <p class="service-para">Lead generation is the process of identifying, attracting, and converting web users into business prospects in digital marketing. SEM is a one .</p>
+                </div>
+            </div>
+            <div class="col-lg-4 service-card">
+                <div class="container text-center pt-4">
+                    <i class="fa-brands fa-google icon" style="font-size: 30px;"></i>
+                    <br>
+                    <p class="service-text">Google SEO</p>
+                    <p class="service-para">SEO is an investment in the long-term success of your organization. If you run a company or a website, you’re probably interested in increasing ...</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-lg-4 service-card">
+                <div class="container text-center pt-4">
+                    <i class="fa-solid fa-hashtag icon" style="font-size: 30px;"></i>
+                    <br>
+                    <p class="service-text">Social MEdia MArketing</p>
+                    <p class="service-para">Social media is quickly becoming one of the most significant components of digital marketing, with the ability to reach millions of customers.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 service-card">
+                <div class="container text-center pt-4">
+                    <i class="fa-solid fa-bag-shopping icon" style="font-size: 30px;"></i>
+                    <br>
+                    <p class="service-text">Ecommerce Solutions</p>
+                    <p class="service-para">E-commerce solutions are the products and services that enable a company to conduct business electronically. An ecommerce website allows you ...</p>
+                </div>
+            </div>
+            <div class="col-lg-4 service-card">
+                <div class="container text-center pt-4">
+                    <i class="fa-solid fa-laptop-code icon" style="font-size: 30px;"></i>
+                    <br>
+                    <p class="service-text">web Development</p>
+                    <p class="service-para">Website development is a method of making people aware of the services or products you are giving, understanding why your products are ...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container">
+    <div class="container" style="position: relative; max-width: calc(100% - 10px); margin: 50px auto; overflow: hidden; background-image: url('../images/data.jpg'); background-size: cover; background-position: center; padding: 0 50px; height: 50vh;">
+        <!-- Overlay -->
+        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5);"></div>
+    
+        <div class="row" style="position: relative; padding: 30px 0;">
+            <div class="col-md-10 col-lg-10">
+                <p style="text-transform: uppercase; color: #8e88b8; font-size: 14px; font-weight: 600; padding-top: 20px;"><b>// Be like the future, go digital.</b></p>
+    
+                <h1 class="text-white t-main mb-4" style="font-weight: 800; font-size: 50px; line-height: 48px;">Let’s Build Your Brand For <br> The Future!</h1>
+            </div>
+            <div class="col-md-2 col-lg-2">
+                <button class="contact">Contact Us</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container">
+    <div class="container mt-4 text-center">
+        <p class="text-danger" style="text-transform: uppercase; font-size: 14px; font-weight: 600; padding-top: 20px;"><b>// OUR CLIENTS</b></p>
+        <h2 style="font-weight: 1000; font-size: 36px; color: #1b1d21; letter-spacing: 1px;">OUR BUSINESS IS TO GROW YOURS</h2>
+        <div class="container mt-4">
+            <div class="row mb-4 mt-4">
+                <div class="col-lg-3 col-md-6 logo-container">
+                    <img src="../images/c1.png" alt="Client 1 Logo">
+                </div>
+                <div class="col-lg-3 col-md-6 logo-container">
+                    <img src="../images/c2.png" alt="Client 2 Logo">
+                </div>
+                <div class="col-lg-3 col-md-6 logo-container">
+                    <img src="../images/c3.png" alt="Client 3 Logo">
+                </div>
+                <div class="col-lg-3 col-md-6 logo-container">
+                    <img src="../images/c4.png" alt="Client 4 Logo">
+                </div>
+                <div class="row mt-4">
+                    <div class="col-lg-3 col-md-6 logo-container">
+                        <img src="../images/s1.png" alt="Client 1 Logo">
+                    </div>
+                    <div class="col-lg-3 col-md-6 logo-container">
+                        <img src="../images/i2.png" alt="Client 2 Logo">
+                    </div>
+                    <div class="col-lg-3 col-md-6 logo-container">
+                        <img src="../images/h2.png" alt="Client 3 Logo">
+                    </div>
+                    <div class="col-lg-3 col-md-6 logo-container">
+                        <img src="../images/errr.png" alt="Client 4 Logo">
+                    </div>
+
+                    <div class="row mt-4" style="padding-left: 60px;">
+                        <div class="col-lg-3 col-md-6 logo-container">
+                            <img src="../images/h4.png" alt="Client 1 Logo">
+
+                        </div>
+                        <div class="col-lg-3 col-md-6 logo-container">
+                            <img src="../images/17_prev_ui.png" alt="Client 2 Logo">
+                        </div>
+                        <div class="col-lg-3 col-md-6 logo-container">
+                            <img src="../images/ana.png" alt="Client 3 Logo">
+                        </div>
+                        <div class="col-lg-3 col-md-6 logo-container">
+                            <img src="../images/i4.png" alt="Client 4 Logo">
+                        </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+<div class="container-fluid footer" style="padding: 20px 10px;">
+    <div class="text-center">
+        <img src="images/mediatyze_neutral.png" alt="" width="120px">
+    </div>
+    <div class="container mt-4">
+        <div class="row text-center text-white text-bold px-2">
+            <div class="col-lg-4 col-md-6 mb-3">
+                <p style="margin-bottom: 5px;"><i class="fas fa-map-marker-alt"></i> B - 127, Sector - 02, Noida, U.P, India</p>
+                <p style="font-weight: 800; color: rgb(221, 216, 216); margin-bottom: 0;"><i class="fas fa-location-arrow"></i> Our Address</p>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-3">
+                <p style="margin-bottom: 5px;"><i class="fas fa-envelope"></i> info@1stdigit.com</p>
+                <p style="font-weight: 800; color: rgb(221, 216, 216); margin-bottom: 0;"><i class="fas fa-mail-bulk"></i> Our Mailbox</p>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-3">
+                <p style="margin-bottom: 5px;"><i class="fas fa-phone"></i> +91 70425 35704</p>
+                <p style="font-weight: 800; color: rgb(221, 216, 216); margin-bottom: 0;"><i class="fas fa-phone-alt"></i> Our Phone</p>
+            </div>
+        </div>
+        <div class="container py-4" style="padding: 0 20px; margin-top: 30px;">
+            <ul class="footer_opt" style="padding: 0; list-style: none; display: flex; flex-wrap: wrap; justify-content: center;">
+                <li style="margin: 10px;"><a href="#">Home</a></li>
+                <li style="margin: 10px;"><a href="#">Services</a></li>
+                <li style="margin: 10px;"><a href="#">Marketing</a></li>
+                <li style="margin: 10px;"><a href="#">SEM</a></li>
+                <li style="margin: 10px;"><a href="#">SMM</a></li>
+                <li style="margin: 10px;"><a href="#">Development</a></li>
+                <li style="margin: 10px;"><a href="#">Contacts</a></li>
+            </ul>
+        </div>
+        <div class="text-center">
+            <p class="text-white" style="font-size: 14px;"><b>Copyright © 2024 Mediatyze inc.</b></p>
+        </div>
+    </div>
+</div>
+
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="../js/script.js"></script>
+
+    </body>
+    </html>

@@ -1,0 +1,684 @@
+body {
+    background-color: whitesmoke;
+    font-family: "Nunito Sans", sans-serif !important;
+}
+
+nav {
+    font-family: "Nunito Sans", sans-serif !important;
+    font-style: bold;
+}
+
+.navbar {
+    background-color: #ffffff;
+}
+
+.navbar .nav-link,
+.navbar-brand {
+    color: #000000; /* Black text by default */
+}
+
+.navbar .nav-link:hover,
+.navbar-brand:hover {
+    color: #ff0000; /* Red text on hover */
+}
+
+.nav-item {
+    position: relative;
+    margin-left: 16px;
+}
+
+.nav-item a {
+    font-size: 16px;
+    color: #1a1b1e;
+    font-weight: 700;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 20px; /* Adjust padding to ensure border fits well */
+}
+
+/* Add border-bottom animation on hover */
+.nav-item a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    background-color: #ff0000; /* Red border color */
+    transition: width 0.3s ease-in-out;
+}
+
+.nav-item a:hover::after {
+    width: 100%;
+}
+
+.nav-link:hover {
+    color: #ff0000; /* Red text color on hover */
+}
+
+/* Fix dropdown menu and arrow alignment */
+.dropdown-menu {
+    margin-top: 0; /* Adjust margin to align dropdown items */
+}
+
+.dropdown-toggle::after {
+    display: none; /* Remove the default dropdown arrow */
+}
+
+/* Hamburger icon styles */
+.navbar-toggler {
+    border: none;
+    padding: 8px 10px;
+    color: #000000;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%280, 0, 0, 0.7%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    width: 30px;
+    height: 30px;
+}
+
+/* Custom styles for mobile menu */
+.offcanvas {
+    background-color: #ffffff;
+}
+
+.offcanvas-body .nav-link {
+    color: #000000;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.offcanvas-body .nav-link:hover {
+    color: #ff0000; /* Red text color on hover */
+}
+
+.main-heading{
+    font-family: "Roboto", sans-serif;
+    font-size: 40px;
+    color: #000000;
+    margin-top: 150px;
+    font-weight: 550;
+    line-height: 55px;
+}
+.main-p{
+    font-family: "Nunito Sans", sans-serif !important;
+    font-size: 16px;
+    line-height: 30px;
+    color: #6d6d6d;
+}
+.contact-us-button {
+            position: fixed;
+            top: 50%;
+            right: -35px;
+            transform: translateY(-50%) rotate(90deg);
+            z-index: 1000;
+            background-color: #bb2127;
+            color: #ffffff;
+            padding: 10px 24px;
+            font-size: 14px;
+            font-weight: bold;
+            border-radius: 0;
+            text-align: center;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+        }
+        .contact-us-button:hover {
+            color: white;
+            background-color: #96181e;
+        }
+        .modal-content {
+    border-radius: 20px;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.modal-header {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.modal-title {
+    font-size: 1.5rem;
+    color: #333;
+    letter-spacing: 0.5px;
+}
+
+.modal-body {
+    padding-top: 0;
+}
+
+.form-control-lg {
+    height: calc(1.5em + 1.25rem + 2px);
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    box-shadow: none;
+    transition: border-color 0.3s ease;
+}
+
+.form-control-lg:focus {
+    border-color: #bb2127;
+    box-shadow: 0 0 0 0.2rem rgba(187, 33, 39, 0.25);
+}
+
+.btn-lg {
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.btn-light {
+    background-color: #f5f5f5;
+    color: #666;
+    border: 1px solid #ddd;
+    transition: background-color 0.3s ease;
+}
+
+.btn-light:hover {
+    background-color: #ebebeb;
+}
+
+.btn-danger {
+    background-color: #bb2127;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-danger:hover {
+    background-color: #a11b22;
+}
+
+.btn-close {
+    background-color: #f5f5f5;
+    border-radius: 50%;
+    padding: 5px;
+    line-height: 1;
+}
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: #25D366;
+    color: #ffffff;
+    font-size: 40px;
+    padding: 2px 14px;
+    border-radius: 50px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.whatsapp-button:hover {
+    background-color: #1EBE5D;
+    color: #ffffff;
+}
+
+.whatsapp-button i {
+    margin: 0;
+    padding: 0;
+}
+.main-wrapper {
+    background-image: url('../images/back.png'); /* Replace with your image path */
+    background-size: cover; /* Cover the entire area */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    width: 100%; /* Ensure the wrapper takes up full width */
+    position: relative; /* Position relative to the document */
+}
+
+.main {
+    padding: 50px 0; /* Padding for the content */
+    max-width: 1140px; /* Maintain the max-width for the content inside */
+    margin: 0 auto; /* Center the content container */
+    color: white; /* Example: Text color for better visibility */
+    height: 100vh;
+}
+
+
+.bg-image {
+    background-size: cover;
+    background-position: center;
+    height: 280px; /* Adjust the height as needed */
+    display: flex;
+    width: 352px;
+    align-items: center;
+    justify-content: center;
+    color: white; /* Adjust text color if needed */
+    margin-right: 20px;
+}
+
+.text-overlay h3{
+    text-align: center;
+    padding: 50px 10px !important;
+    border-radius: 8px; /* Optional: rounded corners for the text box */
+    font-size: 40px;
+    font-weight: 800 !important;
+}
+.numbers{
+    font-weight: 900;
+    font-size: 45px;
+    color: #1b1d21;
+}
+.num{
+    padding: 20px 70px;
+}
+.image-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.image-container img {
+    width: 120%; /* Increase this value to zoom in more */
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
+.t-main{
+    font-family: "Montserrat", sans-serif;
+
+}
+ul.check {
+    list-style:  none;
+    color: white;
+}
+
+ul.check li {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+ul.check li:before {
+    content: '\f00c';
+    font-family: FontAwesome;
+    position: absolute;
+    top: 2px;
+    left: -20px;
+}
+.service-text{
+    font-size: 15px;
+    line-height: 24px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+    padding-top: 15px;
+}
+.services{
+    margin-right: 10px;
+    width: 165px;
+    margin-left: 10px;
+    padding: 20px 0;
+    cursor: pointer;
+}
+.services:hover{
+    background-color: #bb2127;
+    transition: 0.3s ease-in;
+}
+/* General padding for mobile */
+@media (max-width: 767px) {
+    .container-fluid {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    /* Adjusting the numbers section to show 2 in one row */
+    .num {
+        width: 50%; /* 50% width for two per row */
+        margin-bottom: 20px; /* Spacing between rows */
+        text-align: center;
+        margin-left: -18px;
+    }
+
+    /* Ensure the cards are centered and display one by one */
+    .bg-image {
+        margin-left: 0 !important;
+        margin-bottom: 20px;
+        background-size: cover;
+        height: 200px; /* Adjust the height as needed */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .row .col-lg-4 {
+        flex: 0 0 100%; /* Full width for each card */
+        max-width: 100%;
+    }
+
+    /* Adjust the text overlay for the cards */
+    .text-overlay {
+        color: white;
+        font-weight: bold;
+        font-size: 1.5rem;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+}
+
+.contact{
+    background-color: #0a274d; color: white; font-size: 16px; border: none; padding: 15px 35px; cursor: pointer; font-weight: 600; margin-top: 90px;
+}
+.contact:hover{
+    background-color: white;
+    color: #43baff;
+    transition: 0.4s ease-in;
+}
+
+.container {
+    padding: 0;
+}
+
+.case-study-row {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.case-study-card {
+    position: relative;
+    border: none;
+    border-radius: 0;
+    overflow: hidden;
+    height: 300px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.case-study-card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.case-study-card-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.case-study-card-title {
+    font-size: 1.25rem;
+    font-weight: 800;
+    margin-bottom: 5px;
+}
+
+.case-study-card-text {
+    font-size: 0.9rem;
+    font-weight: 300;
+    margin-bottom: 0;
+}
+
+.case-study-card-link {
+    display: block;
+    margin: 0;
+}
+
+.case-study-card:hover .case-study-card-img {
+    transform: scale(1.05);
+    filter: grayscale(100%);
+}
+
+.case-study-card:hover {
+    transform: scale(1.02);
+}
+
+/* Optimize performance by reducing unnecessary margin adjustments */
+.case-study-card-img, .case-study-card-overlay, .case-study-card-title, .case-study-card-text {
+    will-change: transform, filter; /* Hint to the browser to optimize for these properties */
+}
+
+
+.row .col-lg-3 {
+    padding: 10px; /* Add some spacing between logos */
+}
+b body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        .footer {
+            background-color: #96181e; /* Replace with your background color */
+            padding: 20px 0;
+            margin: 0;
+            min-height: 60vh; /* Optional: Ensures footer covers the entire viewport if content is short */
+        }
+
+        .footer .container {
+            margin-bottom: 0;
+        }
+
+
+        .text-bold {
+            font-weight: bold;
+        }
+.footer_opt{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+.footer_opt li{
+    margin-left: -45px;
+}
+.footer_opt li a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+.footer_opt li a:hover{
+    color: #000000 ;
+    transition: 0.4s ease-in;
+}
+@media(max-width: 440px){
+    body{
+        overflow-x: hidden;
+        padding: 0 -10px;
+    }
+    .cons{
+        font-size: 30px !important;
+    }
+}
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
+.nav-item.dropdown .dropdown-menu {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.nav-item.dropdown:hover .nav-link {
+    color: #000; /* Optional: Change link color on hover */
+}
+.logo-container img {
+    width: 100%;
+    height: 50px; /* Set a fixed height */
+    object-fit: contain; /* Keep aspect ratio while fitting within the container */
+    filter: grayscale(100%); /* Initially greyscale */
+    transition: filter 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+.logo-container img:hover {
+    filter: grayscale(0%); /* On hover, remove greyscale */
+    transform: scale(1.1); /* Slight zoom effect */
+}
+.secondary{
+    text-transform: uppercase; font-size: 14px; font-weight: bold;
+}
+.nav-link {
+    color: #6d6d6d;
+    font-weight: 500;
+    text-decoration: none;
+    padding-bottom: 5px; /* Space for the underline */
+    position: relative;
+}
+
+/* Hover effect for links */
+.nav-link:hover {
+    color: #bb2127; /* Change color on hover */
+    text-decoration: none;
+}
+
+/* Active link styles */
+.nav-link.active {
+    color: #bb2127; /* Active link color */
+    font-weight: 800; /* Slightly bolder font */
+}
+
+/* Underline effect for active link */
+.nav-link.active::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #dc3545; /* Color of the underline */
+    transition: width 0.3s;
+}
+
+.nav-link:hover::after {
+    width: 100%; /* Extend underline on hover */
+    height: 2px;
+    background-color: #dc3545; /* Underline color */
+}
+.m-wrapper {
+    background-image: url('../images/gradient.png'); /* Replace with your image path */
+    background-size: cover; /* Cover the entire area */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    width: 100%; /* Ensure the wrapper takes up full width */
+    position: relative; /* Position relative to the document */
+}
+
+
+.top-heading{
+    color: white;
+    font-size: 45px;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+}
+.top-p{
+    color: rgb(187, 184, 184);
+}
+.primary{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 35px;
+}
+.contact-info {
+    padding: 20px;
+}
+
+.contact-info .icon {
+    font-size: 24px;
+    color: #bb2127;
+    margin-right: 10px;
+}
+
+.contact-info h6 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.contact-info p {
+    margin: 0;
+}
+
+.contact-info a {
+    text-decoration: none;
+    color: #000;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.contact-info .address,
+.contact-info .mailbox,
+.contact-info .phone {
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    background-color: #e21e2c;
+    padding: 30px;
+    color: #fff;
+    border-radius: 5px;
+    max-width: 600px; /* Adjusted to 600px */
+    width: 100%; /* Ensures the form takes up the full width available up to max-width */
+    margin: auto;
+}
+
+.contact-form h2 {
+    font-size: 40px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.contact-form p {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 3px;
+    background-color: #eb626c;
+    color: #fff;
+    font-size: 14px;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #fff;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+}
+
+.contact-form button {
+    background-color: #fff;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #f2f2f2;
+}
+
+/* Ensure responsive behavior */
+@media (max-width: 992px) {
+    .contact-info-col, .contact-form-col {
+        margin-bottom: 20px;
+    }
+}
